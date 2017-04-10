@@ -27,4 +27,5 @@ post "/phonebook" do
 
 	db.exec("INSERT INTO phonebook(first_name, last_name, street_address, city, state, zip, cell_phone, home_phone, work_phone) VALUES('#{first_name}', '#{last_name}', '#{street_address}', '#{city}', '#{state}', '#{zip}', '#{cell_phone}', '#{home_phone}', '#{work_phone}')");
 	redirect '/'
+	
 end
